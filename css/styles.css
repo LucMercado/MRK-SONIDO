@@ -1,0 +1,227 @@
+/*Reseteo de css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* border: 2px splid white; */
+
+}
+
+ul,
+ol {
+    list-style: none;
+
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #7209b7;
+    color: aliceblue;
+
+    padding: 10px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px; 
+    background-color: aliceblue;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 0px 5px;
+    align-self: center;
+
+}
+
+/* ======INDEX====== */
+
+/* ------Portada------ */
+
+.portada {
+    background-color: blue;
+    height: 100vh;
+
+    background-image: url(../img/pexels-mali-maeder-219101.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portada-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+        
+
+} 
+
+/* -----Servicios----- */
+
+.servicios {
+    background-color: #3a0ca3;
+}
+
+.nuestros-servicios-titulo {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.servicios-titulo {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+.tarjeta {
+    background-color: #4361ee;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.tarjeta-img {
+    width: 100%;
+
+}
+
+.tarjeta-body {
+    height: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px 10px;
+    align-self: center;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: #4361ee;
+  }
+
+  /* -----Footer----- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logos-contacto {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+.icon-fb {
+    
+    height: 50px;
+    width: 50px;
+}
+
+.icon-ig {
+    
+    height: 50px;
+    width: 50px;
+}
+
+.icon-mail {
+    
+    height: 50px;
+    width: 50px;
+}
+
+/* -----Nosotros----- */
+
+.caja-nosotros {
+    background-color: #3a0ca3;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+     
+
+}
+
+.presentacion {
+    /* poner img */
+    background-color: aliceblue;
+    height: 300px;
+    width: 200px;
+}
+
+/* -----Eventos----- */
+
+.agenda {
+    height: 500px;
+    background-color: #3a0ca3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agenda-titulo {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.calendario {
+    
+    background-color: crimson;
+    border: 2px solid white;
+    text-align: center;
+    color: aliceblue;
+    height: 400px;
+    width: 400px;
+
+
+}
+
+/* -----Contacto----- */
+
+.contacto {
+    background-color: #3a0ca3;
+    height: 500px;
+}

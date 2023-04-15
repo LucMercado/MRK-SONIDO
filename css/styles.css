@@ -4,46 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* border: 2px splid white; */
+}
+
+@media(min-width=1200px) {
+    
 
 }
 
-ul,
-ol {
+ul li {
     list-style: none;
-
-    
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    background-color: #7209b7;
-    color: aliceblue;
-
-    padding: 10px;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-
-}
-
-.nav-list {
-    display: flex;
-    gap: 20px; 
-    background-color: aliceblue;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 0px 5px;
-    align-self: center;
-
-}
 
 /* ======INDEX====== */
 
@@ -67,7 +42,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
         
 
 } 
@@ -86,12 +65,27 @@ body {
     text-align: center;
 }
 
-.servicios-titulo {
+.servicios-enlace:link {
+    color:aliceblue;
+    outline: none;
+    text-decoration: none;
+}
+
+.servicios-enlace:visited {
+    color: aliceblue;
+    
+    text-decoration: none;
+}
+
+.titulos-h2 {
     background-color: black;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
+    width: 100%;
+    margin-block-end: 0px;
   }
+
 
 .tarjeta {
     background-color: #4361ee;
@@ -132,11 +126,12 @@ body {
   /* -----Footer----- */
 
 footer {
+    background-color: #10002b;
+    color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .logos-contacto {
@@ -146,7 +141,14 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    margin-block-end: 0px;
   }
+
+.logos-contacto a {
+    text-decoration: none;
+    font-size: 2.5rem;
+
+}
 
 .icon-fb {
     
@@ -220,8 +222,23 @@ footer {
 }
 
 /* -----Contacto----- */
-
 .contacto {
-    background-color: #3a0ca3;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    background-color: #10002b;
+    
+}
+
+.formulario-titulo {
+    margin-block-start: 10px;
+    background-color: #3c096c;
+}
+

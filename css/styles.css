@@ -46,7 +46,7 @@ body {
     font-size: 2rem;
     text-align: center;
     color: transparent;
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px aliceblue;
         
 
 } 
@@ -54,55 +54,72 @@ body {
 /* -----Servicios----- */
 
 .servicios {
-    background-color: #3a0ca3;
+    background-color: #3C096C;
 }
 
 .nuestros-servicios-titulo {
-    padding: 15px;
+    padding: 10px;
     background-color: black;
-    color: white;
-    padding: 15px;
+    color: #E0AAFF;
+    /* padding: 15px; */
     text-align: center;
+    margin-block-end: 0px;
+
 }
 
 .servicios-enlace:link {
-    color:aliceblue;
+    color:#E0AAFF;
     outline: none;
     text-decoration: none;
 }
 
 .servicios-enlace:visited {
-    color: aliceblue;
+    color: #E0AAFF;
+    
+    text-decoration: none;
+}
+
+.servicios-enlace:hover {
+    color: #C77DFF;
     
     text-decoration: none;
 }
 
 .titulos-h2 {
     background-color: black;
-    color: white;
+    color: #E0AAFF;
     padding: 10px;
     text-align: center;
     width: 100%;
     margin-block-end: 0px;
   }
 
+.contenedor-tarjetas {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    
+}
 
 .tarjeta {
-    background-color: #4361ee;
+    background-color: #7B2CBF;
     width: 200px;
     height: 300px;
     border: 2px solid black;
     border-radius: 20px;
     overflow: hidden;
+    text-align: center;
 
 }
 
 .tarjeta-img {
     width: 100%;
+    height: 50%;
 
 }
 
 .tarjeta-body {
+    color: #E0AAFF;
     height: 50%;
     padding: 15px;
     display: flex;
@@ -111,23 +128,24 @@ body {
   }
   
   .btn {
-    background-color: black;
-    border: 2px solid white;
+    background-color: #240046;
+    color: #E0AAFF;
+    border: 2px solid #E0AAFF;
     border-radius: 10px;
     padding: 8px 10px;
     align-self: center;
   }
   
   .btn:hover {
-    background-color: white;
-    color: #4361ee;
+    background-color: #E0AAFF;
+    color: #5A189A;
   }
 
   /* -----Footer----- */
 
 footer {
     background-color: #10002b;
-    color: aliceblue;
+    color: #E0AAFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,44 +167,106 @@ footer {
     font-size: 2.5rem;
 
 }
-
-.icon-fb {
-    
-    height: 50px;
-    width: 50px;
+.logos-contacto a:link {
+    color:#E0AAFF;
+    outline: none;
+    text-decoration: none;
 }
 
-.icon-ig {
+.logos-contacto a:visited {
+    color: #E0AAFF;
     
-    height: 50px;
-    width: 50px;
+    text-decoration: none;
 }
 
-.icon-mail {
+.logos-contacto a:hover {
+    color: #C77DFF;
     
-    height: 50px;
-    width: 50px;
+    text-decoration: none;
 }
 
 /* -----Nosotros----- */
-
-.caja-nosotros {
-    background-color: #3a0ca3;
-    height: 400px;
-
+.contenedor-nosotros{
+    
+    background-color: #3C096C;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-     
-
 }
 
 .presentacion {
-    /* poner img */
-    background-color: aliceblue;
-    height: 300px;
-    width: 200px;
+background-color: #7B2CBF;
+width: 300px;
+height: 500px;
+border: 2px solid black;
+border-radius: 5px;
+overflow: hidden;
+text-align: center;
+padding: 5px;
+}
+
+.presentacion-destacada {
+background-color: #7B2CBF;
+width: 300px;
+height: 500px;
+border: 2px solid black;
+border-radius: 5px;
+overflow: hidden;
+text-align: center;
+padding: 5px;
+}
+
+.presentacion-destacada img {
+height: 80%;
+width: 100%;
+}
+
+.presentacion img {
+height: 80%;
+width: 100%;
+}
+
+
+@media(min-width: 1200px) {
+    .contenedor-nosotros {
+        background-color: #3C096C;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, minmax(300px, 20vh));
+        align-items: center;
+        justify-items: center;
+        gap: 15px;
+        padding: 15px;
+    
+    }
+
+    .presentacion {
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentacion-destacada img {
+        height: 80%;
+        width: 100%;
+        }
+
+    .presentacion-destacada{
+        background-color: #7B2CBF;
+        border: 2px solid black;
+        height: 90%;
+        width: 50%;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        padding: 5px;
+        
+
+        grid-row: span 2;
+        grid-column: span 3;
+
+    }
+
 }
 
 /* -----Eventos----- */
@@ -203,7 +283,7 @@ footer {
 
 .agenda-titulo {
     background-color: black;
-    color: white;
+    color: #E0AAFF;
     padding: 15px;
     text-align: center;
 
@@ -212,9 +292,9 @@ footer {
 .calendario {
     
     background-color: crimson;
-    border: 2px solid white;
+    border: 2px solid #E0AAFF;
     text-align: center;
-    color: aliceblue;
+    color: #E0AAFF;
     height: 400px;
     width: 400px;
 
@@ -232,7 +312,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: aliceblue;
+    color: #E0AAFF;
     background-color: #10002b;
     
 }

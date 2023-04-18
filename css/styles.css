@@ -31,7 +31,6 @@ body {
     display: flex;
     align-items: start;
     justify-content: center;
-    padding: 19%;
 }
 
 .portada-texto {
@@ -43,6 +42,8 @@ body {
     text-align: center;
     color: transparent;
     -webkit-text-stroke: 1px aliceblue;
+    margin-block-start: 340px;
+    filter: drop-shadow(5px 5px 15px black);
         
 
 } 
@@ -59,6 +60,7 @@ body {
     color: #E0AAFF;
     text-align: center;
     margin-block-end: 0px;
+    filter: drop-shadow(5px 5px 15px #E0AAFF);
 
 }
 
@@ -87,15 +89,18 @@ body {
     text-align: center;
     width: 100%;
     margin-block-end: 0px;
+    filter: drop-shadow(5px 5px 15px #E0AAFF);
   }
 
 .contenedor-tarjetas {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    padding: 10px;
-    width: 95vw;
+    width: 100vw;
     flex-wrap: wrap;
+    padding-block-start: 30px;
+    padding-block-end: 30px;
     
 }
 
@@ -107,6 +112,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
+    filter: drop-shadow(5px 5px 15px #9c6db8);
 
 }
 
@@ -147,7 +153,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    padding-block-start: 15px;
 }
 
 .logos-contacto {
@@ -186,10 +193,14 @@ footer {
 /* -----Nosotros----- */
 .contenedor-nosotros{
     
-    background-color: #3C096C;
+    background-color: #10002b;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    padding-block-start: 30px;
+    padding-block-end: 30px;
+
 }
 
 .presentacion {
@@ -201,6 +212,7 @@ border-radius: 5px;
 overflow: hidden;
 text-align: center;
 padding: 5px;
+filter: drop-shadow(5px 5px 15px #9c6db8);
 }
 
 .presentacion-destacada {
@@ -212,6 +224,7 @@ border-radius: 5px;
 overflow: hidden;
 text-align: center;
 padding: 5px;
+filter: drop-shadow(5px 5px 15px #9c6db8);
 }
 
 .presentacion-destacada img {
@@ -233,6 +246,7 @@ width: 100%;
     border: 2px solid #E0AAFF;
     text-align: center;
     color: #E0AAFF;
+    filter: drop-shadow(5px 5px 15px #9c6db8);
 }
 
 .evento-destacado img {
@@ -247,7 +261,8 @@ width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 15px;
+    padding-block-start: 30px;
+    padding-block-end: 30px;
 }
 
 .evento {
@@ -257,6 +272,7 @@ width: 100%;
     border: 2px solid #E0AAFF;
     text-align: center;
     color: #E0AAFF;
+    filter: drop-shadow(5px 5px 15px #9c6db8);
 
 }
 
@@ -281,6 +297,7 @@ width: 100%;
     background-color: black;
     padding: 15px;
     text-align: center;
+    filter: drop-shadow(5px 5px 15px #E0AAFF);
 
 
 }
@@ -293,6 +310,7 @@ width: 100%;
     color: #E0AAFF;
     height: 60vh;
     width: 60vw;
+    filter: drop-shadow(5px 5px 15px #9c6db8);
 
 
 }
@@ -318,13 +336,19 @@ width: 100%;
 }
 
 .formulario-titulo {
-    background-color: #3c096c;
+    filter: drop-shadow(5px 5px 15px #E0AAFF);
 }
 
 
 
 
 @media(min-width: 1200px) {
+    /* ----index---- */
+    .portada-texto {
+        margin-block-start: 280px;
+    }
+
+    /* ----Nosotros---- */
     .contenedor-nosotros {
         background-color: #3C096C;
     
@@ -334,7 +358,8 @@ width: 100%;
         align-items: center;
         justify-items: center;
         gap: 15px;
-        padding: 15px;
+        padding-block-start: 30px;
+        padding-block-end: 30px;
     
     }
 
@@ -374,14 +399,15 @@ width: 100%;
             align-items: center;
             justify-items: center;
             gap: 15px;
-            padding: 15px;
+            padding-block-start: 30px;
+            padding-block-end: 30px;
         
         }
         .evento {
             background-color: #5A189A;
             width: 100%;
             height: 100%;
-            border: 2px solid #E0AAFF;
+            border: 2px solid #9c6db8;
             text-align: center;
             color: #E0AAFF;
 
@@ -395,7 +421,7 @@ width: 100%;
 
             grid-row: span 2;
             grid-column: span 2;
-            border: 2px solid #E0AAFF;
+            border: 2px solid #9c6db8;
             text-align: center;
             color: #E0AAFF;
 

@@ -1,0 +1,42 @@
+footer {
+    background-color: $color-background;
+    color: $color-claro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block-start: 15px;
+}
+
+.logos-contacto {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-block-end: 0px;
+    
+    & a {
+        text-decoration: none;
+        font-size: 2.5rem;
+
+        &:link {
+            color: $color-claro;
+            outline: none;
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: $color-claro;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $color-hover;
+            text-decoration: none;
+        }
+
+    }
+
+}

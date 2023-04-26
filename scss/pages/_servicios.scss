@@ -1,0 +1,43 @@
+.servicios {
+    background-color: $color-background;
+
+    &-titulo-nuestros {
+        padding: 10px;
+        background-color: black;
+        color: $color-claro;
+        text-align: center;
+        margin-block-end: 0px;
+        filter: drop-shadow(5px 5px 15px $color-claro);
+    }
+
+    &-enlace{
+        &:link {
+            color: $color-claro;
+            outline: none;
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: $color-claro;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $color-hover;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.contenedor-tarjetas {
+    background-color: $color-container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    flex-wrap: wrap;
+    padding-block-start: 30px;
+    padding-block-end: 30px;
+}

@@ -1,0 +1,32 @@
+.portada {
+    background-color: $color-background;
+    height: 100vh;
+
+    background-image: url(../img/pexels-mali-maeder-219101.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    &-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        color: transparent;
+        -webkit-text-stroke: 1px aliceblue;
+        margin-block-start: 340px;
+        filter: drop-shadow(5px 5px 15px black);
+    }
+}
+
+@media(min-width: 1200px) {
+    .portada-texto {
+        margin-block-start: 280px;
+    }
+}

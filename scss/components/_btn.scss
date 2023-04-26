@@ -1,0 +1,13 @@
+.btn {
+    background-color: $color-boton;
+    color: $color-claro;
+    border: 2px solid $color-claro;
+    border-radius: 10px;
+    padding: 8px 10px;
+    align-self: center;
+
+    &:hover {
+        background-color: $color-claro;
+        color: $color-letra;
+    }
+}

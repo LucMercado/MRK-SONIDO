@@ -1,0 +1,55 @@
+.contenedor-eventos {
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-block-start: 30px;
+    padding-block-end: 30px;
+}
+
+.agenda {
+    height: 500px;
+    background-color: $color-background;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-titulo {
+        color: $color-claro;
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+        filter: drop-shadow(5px 5px 15px $color-claro);
+    }
+
+}
+
+.calendario {
+    
+    background-color: $color-container;
+    border: 2px solid $color-claro;
+    text-align: center;
+    color: $color-claro;
+    height: 60vh;
+    width: 60vw;
+    filter: drop-shadow(5px 5px 15px black);
+
+}
+
+@media(min-width: 1200px) {
+
+    .contenedor-eventos {
+        background-color: $color-background;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, minmax(300px, 20vh));
+        align-items: center;
+        justify-items: center;
+    
+    }
+
+}

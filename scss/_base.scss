@@ -15,7 +15,6 @@ $color-container: #3C096C;
 $color-tarjetas: #7B2CBF;
 $color-claro: #E0AAFF;
 $color-hover: #C77DFF;
-$color-letra: #5A189A;
 $color-boton: #240046;
 
 .titulos-h2 {
@@ -26,4 +25,8 @@ $color-boton: #240046;
     width: 100%;
     margin-block-end: 0px;
     filter: drop-shadow(5px 5px 15px #E0AAFF);
+}
+
+hr {
+    color: $color-claro;
 }

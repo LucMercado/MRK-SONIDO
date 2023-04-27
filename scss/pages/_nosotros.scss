@@ -1,0 +1,30 @@
+.contenedor-nosotros{
+    
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-block-start: 30px;
+    padding-block-end: 30px;
+    color: $color-claro;
+
+}
+
+@media(min-width: 1200px) {
+    
+    .contenedor-nosotros {
+        background-color: $color-background;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, minmax(300px, 20vh));
+        align-items: center;
+        justify-items: center;
+        gap: 15px;
+        padding-block-start: 30px;
+        padding-block-end: 30px;
+    
+    }
+
+}

@@ -8,6 +8,7 @@
 
     &:hover {
         background-color: $color-claro;
-        color: $color-letra;
+        color: $color-background;
+        border: 2px solid $color-background;
     }
 }

@@ -1,0 +1,22 @@
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    &-formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #E0AAFF;
+        background-color: #10002b;
+        padding: 15px;
+        height: 80vh;
+
+        &-titulo {
+            filter: drop-shadow(5px 5px 15px #E0AAFF);
+        }
+
+    }
+    
+}

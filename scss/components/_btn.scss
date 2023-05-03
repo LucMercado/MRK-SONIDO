@@ -10,5 +10,10 @@
         background-color: $color-claro;
         color: $color-background;
         border: 2px solid $color-background;
+        transform: scale(1.05);
+    }
+
+    &-quitar:hover {
+        background-color: rgb(136, 5, 5);
     }
 }

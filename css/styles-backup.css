@@ -17,7 +17,7 @@ body {
 
 /* ======INDEX====== */
 
-/* ------Portada------ */
+/* ------Portada------ ta */
 
 .portada {
     background-color: blue;
@@ -48,7 +48,7 @@ body {
 
 } 
 
-/* -----Servicios----- */
+/* -----Servicios----- ta */
 
 .servicios {
     background-color: #3C096C;
@@ -147,7 +147,7 @@ body {
     color: #5A189A;
   }
 
-  /* -----Footer----- */
+  /* -----Footer----- ta */
 
 footer {
     background-color: #10002b;
@@ -192,7 +192,7 @@ footer {
     text-decoration: none;
 }
 
-/* -----Nosotros----- */
+/* -----Nosotros----- ta*/
 .contenedor-nosotros{
     
     background-color: #10002b;
@@ -218,29 +218,12 @@ padding: 5px;
 filter: drop-shadow(5px 5px 15px black);
 }
 
-.presentacion-destacada {
-background-color: #7B2CBF;
-width: 300px;
-height: 500px;
-border: 2px solid black;
-border-radius: 5px;
-overflow: hidden;
-text-align: center;
-padding: 5px;
-filter: drop-shadow(5px 5px 15px black);
-}
-
-.presentacion-destacada img {
-height: 80%;
-width: 100%;
-}
-
 .presentacion img {
 height: 80%;
 width: 100%;
 }
 
-/* -----Eventos----- */
+/* -----Eventos----- ta*/
 
 .evento-destacado {
     background-color: #5A189A;
@@ -318,7 +301,7 @@ width: 100%;
 
 }
 
-/* -----Contacto----- */
+/* -----Contacto----- ta */
 .contacto {
     display: flex;
     flex-direction: column;
@@ -351,7 +334,7 @@ width: 100%;
         margin-block-start: 280px;
     }
 
-    /* ----Nosotros---- */
+    /* ----Nosotros---- ta */
     .contenedor-nosotros {
         background-color: #3C096C;
     
@@ -391,7 +374,7 @@ width: 100%;
         grid-column: span 3;
     }
 
-        /* -----Eventos----- */
+        /* -----Eventos----- ta */
 
         .contenedor-eventos {
             background-color: #10002b;

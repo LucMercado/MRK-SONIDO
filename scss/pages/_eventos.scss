@@ -37,6 +37,10 @@
     width: 60vw;
     filter: drop-shadow(5px 5px 15px black);
 
+    &:hover {
+        filter: drop-shadow(5px 5px 15px white);
+    }
+
 }
 
 @media(min-width: 1200px) {

@@ -258,10 +258,6 @@ footer {
 }
 
 .calendario {
-  background-color: #3C096C;
-  border: 2px solid #E0AAFF;
-  text-align: center;
-  color: #E0AAFF;
   height: 80%;
   width: 60%;
   filter: drop-shadow(5px 5px 15px black);
@@ -278,6 +274,9 @@ footer {
     grid-template-rows: repeat(4, minmax(350px, 20vh));
     align-items: center;
     justify-items: center;
+  }
+  .calendario {
+    width: 800px;
   }
 }
 .portada {

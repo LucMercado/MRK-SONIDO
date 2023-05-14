@@ -29,10 +29,6 @@
 
 .calendario {
     
-    background-color: $color-container;
-    border: 2px solid $color-claro;
-    text-align: center;
-    color: $color-claro;
     height: 80%;
     width: 60%;
     filter: drop-shadow(5px 5px 15px black);
@@ -54,6 +50,10 @@
         align-items: center;
         justify-items: center;
     
+    }
+
+    .calendario {
+        width: 800px;
     }
 
 }

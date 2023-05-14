@@ -11,20 +11,17 @@
     }
 
     &-enlace{
+        text-decoration: none;
         &:link {
             color: $color-claro;
-            outline: none;
-            text-decoration: none;
         }
 
         &:visited {
             color: $color-claro;
-            text-decoration: none;
         }
 
         &:hover {
             color: $color-hover;
-            text-decoration: none;
         }
     }
 
@@ -39,4 +36,12 @@
     flex-wrap: wrap;
     padding-block-start: 30px;
     padding-block-end: 30px;
+}
+
+.link-externo {
+    background-color: $color-container;
+    margin-bottom: 0px;
+    margin-block-end: 0px;
+    text-align: center;
+    padding: 1em;
 }

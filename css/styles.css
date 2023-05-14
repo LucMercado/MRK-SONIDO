@@ -37,7 +37,7 @@ ul li {
   background-color: rgb(136, 5, 5);
 }
 
-/* Tarjeta Servicio */
+/*---- Tarjeta Servicio ----*/
 .tarjeta {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(123, 44, 191) 35%, rgb(185, 104, 255) 100%);
   width: 300px;
@@ -49,6 +49,7 @@ ul li {
   filter: drop-shadow(5px 5px 15px black);
 }
 .tarjeta-img {
+  object-fit: cover;
   width: 100%;
   height: 50%;
 }
@@ -62,11 +63,11 @@ ul li {
   filter: drop-shadow(5px 5px 15px black);
 }
 .tarjeta:hover {
-  transform: scale(1.05);
+  translate: 0 -10px;
   filter: drop-shadow(5px 5px 15px white);
 }
 
-/* Tarjeta Presentacion Nosotros */
+/*---- Tarjeta Presentacion Nosotros ----*/
 .presentacion {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(123, 44, 191) 35%, rgb(185, 104, 255) 100%);
   font-size: 0.8em;
@@ -81,6 +82,7 @@ ul li {
   text-shadow: 5px 5px 15px black;
 }
 .presentacion img {
+  object-fit: cover;
   height: 80%;
   width: 100%;
 }
@@ -89,6 +91,7 @@ ul li {
   transform: translateY(-10px);
 }
 .presentacion-destacada img {
+  object-fit: cover;
   height: 60%;
   width: 80%;
 }
@@ -109,11 +112,11 @@ ul li {
     width: 100%;
   }
 }
-/* Tarjeta Eventos */
+/*---- Tarjeta Eventos ----*/
 .evento {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(123, 44, 191) 35%, rgb(185, 104, 255) 100%);
   width: 300px;
-  height: 400px;
+  height: 470px;
   border: 2px solid black;
   text-align: center;
   color: #E0AAFF;
@@ -121,8 +124,9 @@ ul li {
   text-shadow: 5px 5px 15px black;
 }
 .evento img {
+  object-fit: cover;
   width: 100%;
-  height: 70%;
+  height: 60%;
 }
 .evento:hover {
   filter: drop-shadow(5px 5px 15px white);
@@ -137,6 +141,15 @@ ul li {
   .evento-destacado {
     grid-row: span 2;
     grid-column: span 2;
+  }
+  .evento-destacado img {
+    height: 80%;
+  }
+  .evento-destacado-2 {
+    grid-row: span 2;
+  }
+  .evento-destacado-2 img {
+    height: 80%;
   }
 }
 footer {
@@ -182,25 +195,42 @@ footer {
   width: 7vw;
 }
 
-.contacto {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-}
 .contacto-formulario {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10vw;
   color: #E0AAFF;
   background-color: #10002b;
   padding: 15px;
-  height: 80vh;
+  height: 100vh;
 }
 .contacto-formulario-titulo {
   filter: drop-shadow(5px 5px 15px #E0AAFF);
 }
+.contacto-formulario-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 15px black);
+}
 
+.mapa {
+  height: 60vh;
+  width: 50vw;
+  filter: drop-shadow(5px 5px 15px black);
+}
+
+@media (max-width: 800px) {
+  .contacto-formulario {
+    flex-direction: column;
+  }
+  .mapa {
+    height: 50vh;
+    width: 80vw;
+  }
+}
 .contenedor-eventos {
   background-color: #10002b;
   display: flex;
@@ -232,8 +262,8 @@ footer {
   border: 2px solid #E0AAFF;
   text-align: center;
   color: #E0AAFF;
-  height: 60vh;
-  width: 60vw;
+  height: 80%;
+  width: 60%;
   filter: drop-shadow(5px 5px 15px black);
 }
 .calendario:hover {
@@ -245,7 +275,7 @@ footer {
     background-color: #10002b;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, minmax(300px, 20vh));
+    grid-template-rows: repeat(4, minmax(350px, 20vh));
     align-items: center;
     justify-items: center;
   }
@@ -320,18 +350,17 @@ footer {
   margin-block-end: 0px;
   filter: drop-shadow(5px 5px 15px #E0AAFF);
 }
+.servicios-enlace {
+  text-decoration: none;
+}
 .servicios-enlace:link {
   color: #E0AAFF;
-  outline: none;
-  text-decoration: none;
 }
 .servicios-enlace:visited {
   color: #E0AAFF;
-  text-decoration: none;
 }
 .servicios-enlace:hover {
   color: #C77DFF;
-  text-decoration: none;
 }
 
 .contenedor-tarjetas {
@@ -343,6 +372,14 @@ footer {
   flex-wrap: wrap;
   padding-block-start: 30px;
   padding-block-end: 30px;
+}
+
+.link-externo {
+  background-color: #3C096C;
+  margin-bottom: 0px;
+  margin-block-end: 0px;
+  text-align: center;
+  padding: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
